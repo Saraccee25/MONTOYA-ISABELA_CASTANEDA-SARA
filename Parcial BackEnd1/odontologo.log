@@ -1,0 +1,292 @@
+[2024-08-08 21:41:31] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:41:32] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [42104-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7931)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7915)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7894)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7856)
+	at org.h2.command.Parser.parseInsert(Parser.java:1520)
+	at org.h2.command.Parser.parsePrepared(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:580)
+	at org.h2.command.Parser.parse(Parser.java:555)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:644)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:560)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1092)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:26)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:11)
+[2024-08-08 21:41:32] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:41:32] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [42104-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7931)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7915)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7894)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7856)
+	at org.h2.command.Parser.parseInsert(Parser.java:1520)
+	at org.h2.command.Parser.parsePrepared(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:580)
+	at org.h2.command.Parser.parse(Parser.java:555)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:644)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:560)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1092)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:26)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:12)
+[2024-08-08 21:41:32] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 21:41:32] [ ERROR] [OdontologoDaoH2:91] Error al listar los odontólogos
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+SELECT * FROM ODONTOLOGOS [42104-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7931)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7915)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7894)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1768)
+	at org.h2.command.Parser.readTableReference(Parser.java:2248)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2701)
+	at org.h2.command.Parser.parseSelect(Parser.java:2809)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2691)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2546)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2525)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2518)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2511)
+	at org.h2.command.Parser.parseQuery(Parser.java:2478)
+	at org.h2.command.Parser.parsePrepared(Parser.java:609)
+	at org.h2.command.Parser.parse(Parser.java:580)
+	at org.h2.command.Parser.parse(Parser.java:555)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:644)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:560)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at dao.implementacion.OdontologoDaoH2.listar(OdontologoDaoH2.java:67)
+	at servicio.OdontologoService.listar(OdontologoService.java:22)
+	at Main.main(Main.java:14)
+[2024-08-08 21:42:04] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:42:04] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [23502-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:402)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:262)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:34)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:13)
+[2024-08-08 21:42:04] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:42:04] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [23502-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:402)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:262)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:34)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:14)
+[2024-08-08 21:42:05] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 21:42:05] [ INFO ] [OdontologoDaoH2:85] No se encontró ningún odontólogo.
+[2024-08-08 21:42:33] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:42:33] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [23502-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:402)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:262)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:34)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:13)
+[2024-08-08 21:42:33] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:42:33] [ ERROR] [OdontologoDaoH2:44] Error al guardar odontólogo
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) VALUES (?,?,?) [23502-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:402)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:262)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:34)
+	at dao.implementacion.OdontologoDaoH2.guardar(OdontologoDaoH2.java:15)
+	at servicio.OdontologoService.guardar(OdontologoService.java:18)
+	at Main.main(Main.java:14)
+[2024-08-08 21:42:33] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 21:42:33] [ INFO ] [OdontologoDaoH2:85] No se encontró ningún odontólogo.
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 21:47:04] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:03:06] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:03:54] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:04:53] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:07:58] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Carlos Rodríguez
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: María López
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:25] Listando todos los odontólogos en memoria
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:30] Se listaron 2 odontólogos.
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 1, Nombre = Carlos, Apellido = Rodríguez, Matrícula = MAT9876
+[2024-08-08 22:10:48] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 2, Nombre = María, Apellido = López, Matrícula = MAT5432
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Carlos Rodríguez
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: María López
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:25] Listando todos los odontólogos en memoria
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:30] Se listaron 2 odontólogos.
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 1, Nombre = Carlos, Apellido = Rodríguez, Matrícula = MAT9876
+[2024-08-08 22:21:35] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 2, Nombre = María, Apellido = López, Matrícula = MAT5432
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:21:53] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:23:39] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:25:45] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:27:36] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:27:47] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Pérez Juan
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Gómez Ana
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:25] Listando todos los odontólogos en memoria
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:30] Se listaron 2 odontólogos.
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 1, Nombre = Pérez, Apellido = Juan, Matrícula = MAT001
+[2024-08-08 22:31:14] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 2, Nombre = Gómez, Apellido = Ana, Matrícula = MAT002
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Juan Pérez
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:19] Odontólogo guardado en memoria: Ana Gómez
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:25] Listando todos los odontólogos en memoria
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:30] Se listaron 2 odontólogos.
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 1, Nombre = Juan, Apellido = Pérez, Matrícula = MAT001
+[2024-08-08 22:32:03] [ INFO ] [OdontologoDaoCollection:32] Odontólogo: ID = 2, Nombre = Ana, Apellido = Gómez, Matrícula = MAT002
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = Rodríguez, Nombre = Carlos, Matrícula = MAT9876
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = López, Nombre = María, Matrícula = MAT5432
+[2024-08-08 22:33:01] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
